@@ -59,6 +59,39 @@
 }
 
 /* Begin styling the report items here! */
-.reports {
 
+.reports {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 30px auto 30px auto;
+  grid-template-columns: auto auto auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
+.reports_file{
+  color: #e4e4e4;
+}
+
+/*Not sure if I should modify the original class or add a new one*/
+#q4Wrapper footer{
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  .reports {
+    -ms-grid-columns: auto auto;
+    grid-template-columns: auto auto;
+  }
+}
+
